@@ -15,7 +15,7 @@ var authController = require('./auth/auth');
 var app = express();
 
 //db setup
-mongoose.connect(config.database); // connect to database
+mongoose.connect(config.database_remote_uri); // connect to database
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
