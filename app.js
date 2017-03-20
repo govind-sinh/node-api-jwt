@@ -18,12 +18,12 @@ var app = express();
 mongoose.connect(config.database_remote_uri); // connect to database
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', './views');
 app.set('view engine', 'jade');
 app.set('superSecret', config.secret); // secret variable
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon("./public/favicon.ico"));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
