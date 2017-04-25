@@ -1,2 +1,2 @@
 Node-api-jwt
-This is particulary demo for login app using json web token using nodejs.
+This is demo for login app using json web token.
